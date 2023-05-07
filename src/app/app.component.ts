@@ -33,4 +33,5 @@ SwiperCore.use([
 export class AppComponent {
   title = 'LandingPage_Celltech';
   thumbsSwiper: any;
+  thumbsUpSwiper: any;
 }

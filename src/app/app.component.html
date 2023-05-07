@@ -112,25 +112,43 @@
       <h3 class="big-title text-center mt-5 mb-4">Communicate Personally</h3>
       <div class="slider">
         <div class="slider-header d-flex flex-wrap">
-          <div class="ponit-slider-item active text-center active w-25">
-            <span class="point"></span>
-            <p>Customer journey builder</p>
-          </div>
-          <div class="ponit-slider-item text-center w-25">
-            <span class="point"></span>
-            <p>Automation trigger</p>
-          </div>
-          <div class="ponit-slider-item text-center w-25">
-            <span class="point"></span>
-            <p>Customer interest scoring</p>
-          </div>
-          <div class="ponit-slider-item text-center w-25">
-            <span class="point"></span>
-            <p>Predict customer trends and take action accordingly</p>
-          </div>
+          <swiper
+            (swiper)="thumbsUpSwiper = $event"
+            [spaceBetween]="10"
+            [slidesPerView]="4"
+            [freeMode]="true"
+            [watchSlidesProgress]="true"
+          >
+            <ng-template swiperSlide>
+              <div class="ponit-slider-item active text-center active w-25">
+                <span class="point"></span>
+                <p>Customer journey builder</p>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="ponit-slider-item text-center w-25">
+                <span class="point"></span>
+                <p>Automation trigger</p>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="ponit-slider-item text-center w-25">
+                <span class="point"></span>
+                <p>Customer interest scoring</p>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="ponit-slider-item text-center w-25">
+                <span class="point"></span>
+                <p>Predict customer trends and take action accordingly</p>
+              </div>
+            </ng-template>
+          </swiper>
         </div>
 
         <swiper [loop]="true" [autoHeight]="true" [allowTouchMove]="false"
+                [thumbs]="{ swiper: thumbsUpSwiper }"
+
                 [autoplay]="{ delay: 1000, disableOnInteraction: false }" [pagination]="{ clickable: true }" [navigation]="true">
           <ng-template data-swiper-autoplay="6000" swiperSlide>
             <div class="slider-content">
@@ -156,6 +174,29 @@
           </ng-template>
 
           <ng-template data-swiper-autoplay="10000" class="swiper-slide" swiperSlide>
+            <div class="slider-content">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12 d-flex align-items-center">
+                  <div class="px-5 ">
+                    <p>Create personalized and targeted customer experiences from the first interaction to the final
+                      purchase.</p>
+                    <p>The journey builder provides a visual interface that enables businesses to create, automate, test,
+                      and
+                      optimize customer journeys based on real-time customer data, resulting in improved customer
+                      engagement,
+                      loyalty, and revenue.</p>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12">
+                  <div class="px-5 ">
+                    <img src="../assets/Images/img-slide.png" class="w-100" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template data-swiper-autoplay="60000" swiperSlide>
             <div class="slider-content">
               <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12 d-flex align-items-center">
