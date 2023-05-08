@@ -35,7 +35,7 @@
         <p class="p_2">Unify data across sources, automatically segment in real-time, communicate effectively, and
           understand them
           wholly in a 360-degree view.</p>
-        <a class="button_get_demo" href="" type="button">Get a demo</a>
+        <a class="button_get_demo" type="button" (click)="showModal()">Get a demo</a>
       </div>
       <div class="col-xl-6 col-lg-6 col-md-5 col-sm-4 col-xs-12 d-flex">
         <div class="img_banner d-flex align-item-center justify-content-end">
@@ -81,8 +81,8 @@
         </div>
       </div>
     </div>
-    <div class="text-center get_demo">
-      <a href="#" class="">Get a demo</a>
+    <div class="text-center get_demo" (click)="showModal()">
+      <a class="">Get a demo</a>
     </div>
   </div>
 </section>
@@ -373,7 +373,7 @@
 
   <section class="CTA text-center">
     <h2>Schedule your personalized demo today</h2>
-    <a href="" class="CTA_button">Get a Demo</a>
+    <a class="CTA_button" (click)="showModal()" >Get a Demo</a>
   </section>
 
   <section class="our-customer text-center">
@@ -412,41 +412,41 @@
   </footer>
 </div>
 
-<div class="popup_get_demo">
 
   <!-- Anh lấy  toàn content dưới đây vào popup nhé -->
 
-  <div class="popup-get-demo-content text-center">
-    <div class="logo-celltech"><img src="../assets/Images/Logo_CELL_TECH.png" alt=""></div>
-    <h2 class="mb-4">Schedule a Demo</h2>
-    <form class="form-submit">
-      <div class="row">
-        <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-          <input class="form-control" type="text" placeholder="Full Name">
-        </div>
-        <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-          <input class="form-control" type="text" placeholder="Phone Number">
-        </div>
-        <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-          <input class="form-control" type="text" placeholder="Business Email">
-        </div>
-        <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-          <input class="form-control" type="text" placeholder="Company Name">
-        </div>
-        <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-          <input class="form-control" type="text" placeholder="Job Title">
-        </div>
-        <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-          <input class="form-control" type="text" placeholder="Industry ">
-        </div>
+  <nz-modal [(nzVisible)]="isVisible" [nzTitle]="template" [nzFooter]="template" nzWidth="60%" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+    <ng-container *nzModalContent>
+      <div class="popup-get-demo-content text-center">
+        <div class="logo-celltech"><img src="../assets/Images/Logo_CELL_TECH.png" alt=""></div>
+        <h2 class="mb-4">Schedule a Demo</h2>
+        <form class="form-submit">
+          <div class="row">
+            <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
+              <input class="form-control" type="text" placeholder="Full Name">
+            </div>
+            <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
+              <input class="form-control" type="text" placeholder="Phone Number">
+            </div>
+            <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
+              <input class="form-control" type="text" placeholder="Business Email">
+            </div>
+            <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
+              <input class="form-control" type="text" placeholder="Company Name">
+            </div>
+            <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
+              <input class="form-control" type="text" placeholder="Job Title">
+            </div>
+            <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
+              <input class="form-control" type="text" placeholder="Industry ">
+            </div>
+          </div>
+          <p> Please note that we will treat your data with respect, for further details on this you can check our <a href="#" title="" rel=""> Privacy
+            Policy</a>.</p>
+          <button type="button" class="btn button-submit">Submit</button>
+        </form>
       </div>
-      <p> Please note that we will treat your data with respect, for further details on this you can check our <a href="#" title="" rel=""> Privacy
-      Policy</a>.</p>
-      <button type="button" class="btn button-submit">Submit</button>
-    </form>
-  </div>
-
-
+    </ng-container>
+  </nz-modal>
+<ng-template #template></ng-template>
   <!-- end -->
-
-</div>
