@@ -35,7 +35,7 @@ $text-color-main: #173056;
 $text-color-sub: #545454;
 
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-    // display: none;
+    display: none;
 }
 
 
@@ -43,6 +43,18 @@ $text-color-sub: #545454;
 
     .point-slider-item {
         border-color: $text-color-main !important;
+    }
+
+    .ponit-slider-item {
+
+        span.point::before {
+            opacity: 1 !important;
+        }
+
+        p {
+            color: $color-main !important;
+            font-family: 'Montserrat-SemiBold' !important;
+        }
     }
 }
 
@@ -61,13 +73,45 @@ $text-color-sub: #545454;
         .swiper-slide {
             width: 50% !important;
             padding: 0 12px;
+            margin-bottom: 24px;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
-    .slide-right{
-        .swiper-slide{
+
+    .slide-right {
+        .swiper-slide {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+    }
+}
+
+.communicate-personally {
+    .slide-top {
+        .swiper-slide {
+            &:hover{
+                cursor: pointer;
+            }
+            &::after {
+                content: '';
+                display: inline;
+                width: calc(100% - 14px);
+                height: 1px;
+                background: $color-main;
+                position: absolute;
+                top: 12px;
+                left: calc(50% + 12px);
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
         }
     }
 }

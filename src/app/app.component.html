@@ -109,11 +109,11 @@
 <section class="communicate-personally d-flex align-items-center justify-content-center">
   <div class="communicate-personally-content">
     <div class="container">
-      <h3 class="big-title text-center mt-5 mb-4">Communicate Personally</h3>
+      <h3 class="big-title text-center my-5">Communicate Personally</h3>
       <div class="slider">
         <div class="slider-header d-flex flex-wrap">
           <swiper (swiper)="thumbsUpSwiper = $event" [spaceBetween]="10" [slidesPerView]="4" [freeMode]="true"
-            [watchSlidesProgress]="true">
+            [watchSlidesProgress]="true" class="slide-top">
             <ng-template swiperSlide>
               <div class="ponit-slider-item text-center ">
                 <span class="point"></span>
@@ -141,7 +141,7 @@
           </swiper>
         </div>
 
-        <swiper [loop]="true" [autoHeight]="true" [allowTouchMove]="false" [thumbs]="{ swiper: thumbsUpSwiper }"
+        <swiper [loop]="true" [autoHeight]="false" [allowTouchMove]="false" [thumbs]="{ swiper: thumbsUpSwiper }"
           [autoplay]="{ delay: 1000, disableOnInteraction: false }" [pagination]="{ clickable: true }"
           [navigation]="false">
           <ng-template data-swiper-autoplay="6000" swiperSlide>
@@ -159,10 +159,10 @@
                       loyalty, and revenue.</p>
                   </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12">
-                  <div class="px-5 ">
-                    <img src="../assets/Images/img-slide.png" class="w-100" alt="">
-                  </div>
+                <div
+                  class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 d-flex align-items-center justify-content-center">
+                  <img src="../assets/Images/img-slide.png" class="w-85" alt="">
+
                 </div>
               </div>
             </div>
@@ -171,23 +171,20 @@
           <ng-template data-swiper-autoplay="10000" class="swiper-slide" swiperSlide>
             <div class="slider-content">
               <div class="row">
+                <div
+                class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center justify-content-center">
+                <img src="../assets/Images/slide_per_img01.png" class="w-75" alt="">
+              </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12 d-flex align-items-center">
                   <div class="px-5 ">
-                    <p>Create personalized and targeted customer experiences from the first interaction to the final
-                      purchase.</p>
-                    <p>The journey builder provides a visual interface that enables businesses to create, automate,
-                      test,
-                      and
-                      optimize customer journeys based on real-time customer data, resulting in improved customer
-                      engagement,
-                      loyalty, and revenue.</p>
+                    <p>Activate targeted campaigns, personalized messages, and exclusive discount offers based on
+                      real-time customer data analyzed within our comprehensive CDP solutions. Deliver relevant, timely
+                      interactions to your customers to elevate your marketing strategy, increasing engagement and
+                      driving conversions.</p>
+
                   </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12">
-                  <div class="px-5 ">
-                    <img src="../assets/Images/img-slide.png" class="w-100" alt="">
-                  </div>
-                </div>
+               
               </div>
             </div>
           </ng-template>
@@ -197,20 +194,14 @@
               <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12 d-flex align-items-center">
                   <div class="px-5 ">
-                    <p>Create personalized and targeted customer experiences from the first interaction to the final
-                      purchase.</p>
-                    <p>The journey builder provides a visual interface that enables businesses to create, automate,
-                      test,
-                      and
-                      optimize customer journeys based on real-time customer data, resulting in improved customer
-                      engagement,
-                      loyalty, and revenue.</p>
+                    <p>Assign a score to each customer based on their interests and behaviors over time. Combine this
+                      with our cutting-edge journey builder and transform your approach to customers to resonate with
+                      their interests and preferences engagement today</p>
+
                   </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12">
-                  <div class="px-5 ">
-                    <img src="../assets/Images/img-slide.png" class="w-100" alt="">
-                  </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center justify-content-center">
+                  <img src="../assets/Images/Customer Survey-cuate 1.png" class="w-75" alt="">
                 </div>
               </div>
             </div>
@@ -219,6 +210,9 @@
           <ng-template data-swiper-autoplay="60000" swiperSlide>
             <div class="slider-content">
               <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center justify-content-center">
+                  <img src="../assets/Images/Dark analytics-bro.png" class="w-75" alt="">
+                </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12 d-flex align-items-center">
                   <div class="px-5 ">
                     <p>Create personalized and targeted customer experiences from the first interaction to the final
@@ -231,11 +225,7 @@
                       loyalty, and revenue.</p>
                   </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12">
-                  <div class="px-5 ">
-                    <img src="../assets/Images/img-slide.png" class="w-100" alt="">
-                  </div>
-                </div>
+
               </div>
             </div>
           </ng-template>
@@ -259,47 +249,36 @@
             <swiper (swiper)="thumbsSwiper = $event" [spaceBetween]="0" [slidesPerView]="6" [freeMode]="true"
               [watchSlidesProgress]="true" class="slide-left">
               <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class=" mb-4">
-                  <div class="point-slider-item active h-100 d-flex align-items-center justify-content-center">Email
-                    marketing
-                  </div>
+                <div class="point-slider-item active h-100 d-flex align-items-center justify-content-center">Email
+                  marketing
                 </div>
               </ng-template>
               <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class=" mb-4">
-                  <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">In-app messaging
-                  </div>
+                <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">In-app messaging
                 </div>
               </ng-template>
               <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class=" mb-4">
-                  <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">Mobile push
-                  </div>
+                <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">Mobile push
                 </div>
               </ng-template>
               <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class=" mb-4">
-                  <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">On-site
-                    messaging</div>
-                </div>
+                <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">On-site
+                  messaging</div>
               </ng-template>
               <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class=" mb-4">
-                  <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">SMS</div>
-                </div>
+                <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">SMS</div>
+
               </ng-template>
               <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class=" mb-4">
-                  <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">Web Push
-                    Notification</div>
-                </div>
+                <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">Web Push
+                  Notification</div>
               </ng-template>
             </swiper>
           </div>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <div class="h-100 d-flex align-items-center justify-content-center">
-            <swiper [loop]="true" [autoHeight]="true" [allowTouchMove]="false" [thumbs]="{ swiper: thumbsSwiper }"
+            <swiper [loop]="true" [autoHeight]="false" [allowTouchMove]="false" [thumbs]="{ swiper: thumbsSwiper }"
               [autoplay]="{ delay: 100, disableOnInteraction: false }" [pagination]="{ clickable: true }"
               [navigation]="false" class="slide-right">
               <ng-template data-swiper-autoplay="6000" swiperSlide>

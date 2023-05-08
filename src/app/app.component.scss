@@ -523,7 +523,7 @@ h6 {
 
     .slider {
         .slider-header {
-            padding: 0 100px;
+            padding: 0 40px;
 
             .ponit-slider-item {
                 display: flex;
@@ -561,38 +561,29 @@ h6 {
                     text-transform: capitalize;
                 }
 
-                &.active {
-                    span.point::before {
-                        opacity: 1;
-                    }
 
-                    p {
-                        color: $color-main;
-                        font-family: 'Montserrat-SemiBold';
-                    }
-                }
 
-                &::after {
-                    content: '';
-                    display: inline;
-                    width: calc(100% - 24px);
-                    height: 1px;
-                    background: $color-main;
-                    position: absolute;
-                    top: 11%;
-                    left: calc(50% + 12px);
-                }
+                // &::after {
+                //     content: '';
+                //     display: inline;
+                //     width: calc(100% - 24px);
+                //     height: 1px;
+                //     background: $color-main;
+                //     position: absolute;
+                //     top: 11%;
+                //     left: calc(50% + 12px);
+                // }
 
-                &:last-child {
-                    &::after {
-                        display: none;
-                    }
-                }
+                // &:last-child {
+                //     &::after {
+                //         display: none;
+                //     }
+                // }
             }
         }
 
         .slider-content {
-            margin-top: 65px;
+            margin: 32px 0;
 
             p {
                 margin-bottom: 24px;
