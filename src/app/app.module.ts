@@ -13,7 +13,8 @@ import {AppRoutingModule} from "./app-routing.module";
     AppComponent
   ],
   imports: [
-    BrowserModule,FormsModule,
+    BrowserModule,
+    FormsModule,
     HttpClientModule,
     HttpClientJsonpModule,
     ReactiveFormsModule,

@@ -12,16 +12,16 @@
         </div>
         <div class="col-xl-7 col-lg-7 col-sm-6">
           <div class="feature">
-            <a href="">Features</a>
-            <a href="">Deployment</a>
-            <a href="">Pricing</a>
-            <a href="">Contact</a>
+            <a href="#Features">Features</a>
+            <a href="#Deployment">Deployment</a>
+            <a href="#Deployment">Pricing</a>
+            <a href="#footer">Contact</a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-3 col-sm-3">
           <div class="login&getstart">
-            <a href="" class="login">Login</a>
-            <a class="get_started" type="button">Get started</a>
+            <a class="login" (click)="showModal()">Login</a>
+            <a class="get_started" type="button" (click)="showModal()">Get started</a>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@
   </div>
 </section>
 
-<section class="manage_with_dynamic d-flex align-items-center justify-content-center">
+<section id="Features" class="manage_with_dynamic d-flex align-items-center justify-content-center">
   <div class="container">
     <div class="title-section text-center">
       <h3 class="">Manage With Dynamic Database and APIs</h3>
@@ -340,7 +340,7 @@
     </div>
   </section>
 
-  <section class="Deployment_Pricing d-flex align-items-center justify-content-center">
+  <section id="Deployment" class="Deployment_Pricing d-flex align-items-center justify-content-center">
     <div class="container">
       <div class="row">
         <div class="col-6 d-flex justify-content-start">
@@ -420,35 +420,35 @@
   <nz-modal [(nzVisible)]="isVisible" [nzTitle]="template" [nzFooter]="template" nzWidth="60%"
   (nzOnCancel)="handleCancel()" class="modal-ng-getdemo" (nzOnOk)="handleOk()" >
   <ng-container *nzModalContent>
-    <div class="popup_get_demo">
+    <div *ngIf="form" class="popup_get_demo">
       <div class="popup-get-demo-content text-center">
         <div class="logo-celltech"><img src="../assets/Images/Logo_CELL_TECH.png" alt=""></div>
         <h2 class="mb-4">Schedule a Demo</h2>
-        <form class="form-submit">
+        <form class="form-submit" [formGroup]="form">
           <div class="row">
             <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-              <input class="form-control" type="text" placeholder="Full Name">
+              <input formControlName="NAME" class="form-control" type="text" placeholder="Full Name">
             </div>
             <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-              <input class="form-control" type="text" placeholder="Phone Number">
+              <input formControlName="LEAD_PHONE_NUMBER" class="form-control" type="number" placeholder="Phone Number">
             </div>
             <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-              <input class="form-control" type="text" placeholder="Business Email">
+              <input formControlName="LEAD_EMAIL" class="form-control" type="text" placeholder="Business Email">
             </div>
             <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-              <input class="form-control" type="text" placeholder="Company Name">
+              <input formControlName="LEAD_COMPANY" class="form-control" type="text" placeholder="Company Name">
             </div>
             <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-              <input class="form-control" type="text" placeholder="Job Title">
+              <input formControlName="JOB_TITLE" class="form-control" type="text" placeholder="Job Title">
             </div>
             <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-              <input class="form-control" type="text" placeholder="Industry ">
+              <input formControlName="INDUSTRY" class="form-control" type="text" placeholder="Industry ">
             </div>
           </div>
           <p> Please note that we will treat your data with respect, for further details on this you can check our <a
               href="#" title="" rel=""> Privacy
               Policy</a>.</p>
-          <button type="button" class="btn button-submit">Submit</button>
+          <button [disabled]="form.invalid" type="button" class="btn button-submit" (click)="submit()">Submit</button>
         </form>
       </div>
     </div>
