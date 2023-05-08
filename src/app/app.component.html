@@ -375,7 +375,7 @@
 
   <section class="CTA text-center">
     <h2>Schedule your personalized demo today</h2>
-    <a class="CTA_button" (click)="showModal()" >Get a Demo</a>
+    <a class="CTA_button" (click)="showModal()">Get a Demo</a>
   </section>
 
   <section class="our-customer text-center">
@@ -415,10 +415,12 @@
 </div>
 
 
-  <!-- Anh lấy  toàn content dưới đây vào popup nhé -->
-
-  <nz-modal [(nzVisible)]="isVisible" [nzTitle]="template" [nzFooter]="template" nzWidth="60%" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
-    <ng-container *nzModalContent>
+<!-- Anh lấy  toàn content dưới đây vào popup nhé -->
+<div class="modal-ng-getdemo">
+  <nz-modal [(nzVisible)]="isVisible" [nzTitle]="template" [nzFooter]="template" nzWidth="60%"
+  (nzOnCancel)="handleCancel()" class="modal-ng-getdemo" (nzOnOk)="handleOk()" >
+  <ng-container *nzModalContent>
+    <div class="popup_get_demo">
       <div class="popup-get-demo-content text-center">
         <div class="logo-celltech"><img src="../assets/Images/Logo_CELL_TECH.png" alt=""></div>
         <h2 class="mb-4">Schedule a Demo</h2>
@@ -444,12 +446,15 @@
             </div>
           </div>
           <p> Please note that we will treat your data with respect, for further details on this you can check our <a
-            href="#" title="" rel=""> Privacy
-            Policy</a>.</p>
+              href="#" title="" rel=""> Privacy
+              Policy</a>.</p>
           <button type="button" class="btn button-submit">Submit</button>
         </form>
       </div>
-    </ng-container>
-  </nz-modal>
+    </div>
+  </ng-container>
+</nz-modal>
+</div>
+
 <ng-template #template></ng-template>
-  <!-- end -->
+<!-- end -->
