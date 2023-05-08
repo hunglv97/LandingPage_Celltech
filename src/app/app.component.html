@@ -250,7 +250,7 @@
             <swiper (swiper)="thumbsSwiper = $event" [spaceBetween]="0" [slidesPerView]="6" [freeMode]="true"
               [autoplay]="{ delay: 5000, disableOnInteraction: false }" [watchSlidesProgress]="true" class="slide-left">
               <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="point-slider-item active h-100 d-flex align-items-center justify-content-center">Email
+                <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">Email
                   marketing
                 </div>
               </ng-template>
@@ -280,27 +280,28 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <div class="h-100 d-flex align-items-center justify-content-center">
             <swiper [loop]="true" [autoHeight]="false" [allowTouchMove]="false" [thumbs]="{ swiper: thumbsSwiper }"
+                    [slidesPerView]="1"
+                    [initialSlide]="0"
               [autoplay]="{ delay: 5000, disableOnInteraction: false }" [pagination]="{ clickable: true }"
               [navigation]="false" class="slide-right">
-              <ng-template data-swiper-autoplay="5000" swiperSlide>
+              <ng-template data-swiper-autoplay="5000" class="swiper-slide" swiperSlide>
                 <img src="../assets/Images/Provide_img_slide01.png" class="w-75" alt="">
               </ng-template>
               <ng-template data-swiper-autoplay="5000" class="swiper-slide" swiperSlide>
                 <img src="../assets/Images/Provide_img_slide02.png" class="w-75" alt="">
               </ng-template>
 
-              <ng-template data-swiper-autoplay="5000" swiperSlide>
+              <ng-template data-swiper-autoplay="5000" class="swiper-slide" swiperSlide>
                 <img src="../assets/Images/Provide_img_slide03.png" class="w-75" alt="">
               </ng-template>
-              <ng-template data-swiper-autoplay="5000" swiperSlide>
+              <ng-template data-swiper-autoplay="5000" class="swiper-slide" swiperSlide>
                 <img src="../assets/Images/Provide_img_slide04.png" class="w-75" alt="">
               </ng-template>
 
               <ng-template data-swiper-autoplay="5000" class="swiper-slide" swiperSlide>
                 <img src="../assets/Images/Provide_img_slide05.png" class="w-75" alt="">
               </ng-template>
-
-              <ng-template data-swiper-autoplay="5000" swiperSlide>
+              <ng-template data-swiper-autoplay="5000" class="swiper-slide" swiperSlide>
                 <img src="../assets/Images/Provide_img_slide06.png" class="w-75" alt="">
               </ng-template>
             </swiper>
