@@ -353,7 +353,7 @@ h6 {
 }
 
 .banner {
-    height: 100vh;
+    min-height: 100vh;
     background: url("../assets/Images/Banner.jpg");
     background-size: cover;
     display: flex;
@@ -399,7 +399,7 @@ h6 {
 }
 
 .manage_with_dynamic {
-    height: 100vh;
+    min-height: 100vh;
 
     .title-section {
         margin-bottom: 82px;
@@ -631,9 +631,9 @@ section.provides-eamless {
         background: #F1F1F1;
         border: 1px solid transparent;
 
-        &.active {
-            border: 1px solid $text-color-main;
-        }
+        // &.active {
+        //     border: 1px solid $text-color-main;
+        // }
     }
 }
 
@@ -660,7 +660,8 @@ section.stay-ahead {
 }
 
 section.Deployment_Pricing {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 40px 0;
     background-image: url('../assets/Images/Bg_2323.png');
     background-size: cover;
     position: relative;
@@ -684,10 +685,11 @@ section.Deployment_Pricing {
             font-size: 40px;
             text-transform: uppercase;
             line-height: 50px;
+
         }
 
-        img {
-            margin: 100px 0 64px 0;
+        .box-img {
+            margin: 30px 0;
         }
 
         p {
@@ -789,6 +791,7 @@ section.our-customer {
     #header {
         padding: 16px 16px 0 16px;
     }
+
     #header .header-content .feature a {
         padding: 12px 20px;
         font-family: "Montserrat-SemiBold";
@@ -874,6 +877,11 @@ section.our-customer {
         line-height: 32px;
     }
 
+    section.Deployment_Pricing .option-item .box-img {
+
+        margin: 0;
+    }
+
     section.Deployment_Pricing .option-item img {
         margin: 50px 0 64px 0;
         height: 323px;
@@ -905,7 +913,8 @@ section.our-customer {
 
         .list-cus {
             width: 97%;
-            img{
+
+            img {
                 width: 70% !important;
             }
         }
@@ -1054,7 +1063,8 @@ section.our-customer {
 
         .list-cus {
             width: 97%;
-            img{
+
+            img {
                 width: 70% !important;
             }
         }
@@ -1079,20 +1089,20 @@ section.our-customer {
     }
 }
 
-    @media (min-width: 768px) and (max-width: 991px){
-        .hidden-md {
-            display: none !important;
-        }
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-md {
+        display: none !important;
     }
+}
 
-    @media (min-width: 576px) and (max-width: 767px){
-        .hidden-sm {
-            display: none !important;
-        }
+@media (min-width: 576px) and (max-width: 767px) {
+    .hidden-sm {
+        display: none !important;
     }
+}
 
-    @media (max-width: 575px){
-        .hidden-xs {
-            display: none !important;
-        }
+@media (max-width: 575px) {
+    .hidden-xs {
+        display: none !important;
     }
+}
