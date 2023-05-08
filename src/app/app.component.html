@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xl-2 col-lg-2 col-sm-3">
           <h1 class="logo_cell_tech"><a href="#"><img class="" style="width: 80%;"
-                src="../assets/Images/Logo_CELL_TECH.png" alt="logo"></a></h1>
+                                                      src="../assets/Images/Logo_CELL_TECH.png" alt="logo"></a></h1>
         </div>
         <div class="col-xl-7 col-lg-7 col-sm-6">
           <div class="feature">
@@ -112,44 +112,37 @@
       <h3 class="big-title text-center mt-5 mb-4">Communicate Personally</h3>
       <div class="slider">
         <div class="slider-header d-flex flex-wrap">
-          <swiper
-            (swiper)="thumbsUpSwiper = $event"
-            [spaceBetween]="10"
-            [slidesPerView]="4"
-            [freeMode]="true"
-            [watchSlidesProgress]="true"
-          >
+          <swiper (swiper)="thumbsUpSwiper = $event" [spaceBetween]="10" [slidesPerView]="4" [freeMode]="true"
+                  [watchSlidesProgress]="true">
             <ng-template swiperSlide>
-              <div class="ponit-slider-item active text-center active w-25">
+              <div class="ponit-slider-item text-center ">
                 <span class="point"></span>
                 <p>Customer journey builder</p>
               </div>
             </ng-template>
             <ng-template swiperSlide>
-              <div class="ponit-slider-item text-center w-25">
+              <div class="ponit-slider-item text-center">
                 <span class="point"></span>
                 <p>Automation trigger</p>
               </div>
             </ng-template>
             <ng-template swiperSlide>
-              <div class="ponit-slider-item text-center w-25">
+              <div class="ponit-slider-item text-center">
                 <span class="point"></span>
                 <p>Customer interest scoring</p>
               </div>
             </ng-template>
             <ng-template swiperSlide>
-              <div class="ponit-slider-item text-center w-25">
+              <div class="ponit-slider-item text-center">
                 <span class="point"></span>
                 <p>Predict customer trends and take action accordingly</p>
               </div>
             </ng-template>
           </swiper>
         </div>
-
-        <swiper [loop]="true" [autoHeight]="true" [allowTouchMove]="false"
-                [thumbs]="{ swiper: thumbsUpSwiper }"
-
-                [autoplay]="{ delay: 1000}" [pagination]="{ clickable: true }" [navigation]="true">
+        <swiper [loop]="true" [autoHeight]="true" [allowTouchMove]="false" [thumbs]="{ swiper: thumbsUpSwiper }"
+                [autoplay]="{ delay: 1000, disableOnInteraction: false }" [pagination]="{ clickable: true }"
+                [navigation]="false">
           <ng-template data-swiper-autoplay="6000" swiperSlide>
             <div class="slider-content">
               <div class="row">
@@ -157,7 +150,8 @@
                   <div class="px-5 ">
                     <p>Create personalized and targeted customer experiences from the first interaction to the final
                       purchase.</p>
-                    <p>The journey builder provides a visual interface that enables businesses to create, automate, test,
+                    <p>The journey builder provides a visual interface that enables businesses to create, automate,
+                      test,
                       and
                       optimize customer journeys based on real-time customer data, resulting in improved customer
                       engagement,
@@ -180,7 +174,8 @@
                   <div class="px-5 ">
                     <p>Create personalized and targeted customer experiences from the first interaction to the final
                       purchase.</p>
-                    <p>The journey builder provides a visual interface that enables businesses to create, automate, test,
+                    <p>The journey builder provides a visual interface that enables businesses to create, automate,
+                      test,
                       and
                       optimize customer journeys based on real-time customer data, resulting in improved customer
                       engagement,
@@ -203,7 +198,8 @@
                   <div class="px-5 ">
                     <p>Create personalized and targeted customer experiences from the first interaction to the final
                       purchase.</p>
-                    <p>The journey builder provides a visual interface that enables businesses to create, automate, test,
+                    <p>The journey builder provides a visual interface that enables businesses to create, automate,
+                      test,
                       and
                       optimize customer journeys based on real-time customer data, resulting in improved customer
                       engagement,
@@ -226,7 +222,8 @@
                   <div class="px-5 ">
                     <p>Create personalized and targeted customer experiences from the first interaction to the final
                       purchase.</p>
-                    <p>The journey builder provides a visual interface that enables businesses to create, automate, test,
+                    <p>The journey builder provides a visual interface that enables businesses to create, automate,
+                      test,
                       and
                       optimize customer journeys based on real-time customer data, resulting in improved customer
                       engagement,
@@ -247,183 +244,190 @@
   </div>
 </section>
 <div>
-<section class="provides-eamless">
-  <div class="container">
-    <div class="big-title text-center">Provide Seamless Customer Experience</div>
+  <section class="provides-eamless">
+    <div class="container">
+      <div class="big-title text-center">Provide Seamless Customer Experience</div>
 
-    <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <p class="">Offering a ubiquitous brand experience, our innovative multi-touchpoint approach connects with
-          your customers
-          on their preferred platforms, engaging and captivating them with every interaction.</p>
-        <div class="row">
-          <swiper
-            (swiper)="thumbsSwiper = $event"
-            [spaceBetween]="10"
-            [slidesPerView]="4"
-            [freeMode]="true"
-            [watchSlidesProgress]="true"
-          >
-            <ng-template swiperSlide>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
-                <div class="point-slider-item active h-100 d-flex align-items-center justify-content-center">Email marketing
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <p class="">Offering a ubiquitous brand experience, our innovative multi-touchpoint approach connects with
+            your customers
+            on their preferred platforms, engaging and captivating them with every interaction.</p>
+          <div class="row">
+
+            <swiper (swiper)="thumbsSwiper = $event" [spaceBetween]="0" [slidesPerView]="6" [freeMode]="true"
+                    [watchSlidesProgress]="true" class="slide-left">
+              <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class=" mb-4">
+                  <div class="point-slider-item active h-100 d-flex align-items-center justify-content-center">Email
+                    marketing
+                  </div>
                 </div>
-              </div>
-            </ng-template>
-            <ng-template swiperSlide>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
-                <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">In-app messaging</div>
-              </div>
-            </ng-template>
-            <ng-template swiperSlide>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
-                <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">Mobile push</div>
-              </div>
-            </ng-template>
-            <ng-template swiperSlide>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
-                <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">On-site messaging</div>
-              </div>
-            </ng-template>
-            <ng-template swiperSlide>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
-                <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">SMS</div>
-              </div>
-            </ng-template>
-            <ng-template swiperSlide>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mb-4">
-                <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">Web Push Notification</div>
-              </div>
-            </ng-template>
-          </swiper>
-        </div>
-      </div>
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-          <swiper [loop]="true" [autoHeight]="true" [allowTouchMove]="false"
-                  [thumbs]="{ swiper: thumbsSwiper }"
-                  [autoplay]="{ delay: 1000}"  [pagination]="{ clickable: true }" [navigation]="true">
-            <ng-template data-swiper-autoplay="6000" swiperSlide>
-              <img src="../assets/Images/Email campaign-amico 1.png" class="w-75" alt="">
-            </ng-template>
-
-            <ng-template data-swiper-autoplay="10000" class="swiper-slide" swiperSlide>
-              <img src="../assets/Images/Email campaign-amico 1.png" class="w-75" alt="">
-            </ng-template>
-
-            <ng-template data-swiper-autoplay="60000" swiperSlide>
-              <img src="../assets/Images/Email campaign-amico 1.png" class="w-75" alt="">
-            </ng-template>
-            <ng-template data-swiper-autoplay="6000" swiperSlide>
-              <img src="../assets/Images/Email campaign-amico 1.png" class="w-75" alt="">
-            </ng-template>
-
-            <ng-template data-swiper-autoplay="10000" class="swiper-slide" swiperSlide>
-              <img src="../assets/Images/Email campaign-amico 1.png" class="w-75" alt="">
-            </ng-template>
-
-            <ng-template data-swiper-autoplay="60000" swiperSlide>
-              <img src="../assets/Images/Email campaign-amico 1.png" class="w-75" alt="">
-            </ng-template>
-          </swiper>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="stay-ahead">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-12 w-48">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-          <img src="../assets/Images/Design stats-pana 1.png" class="w-100" alt="">
-        </div>
-      </div>
-      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-xs-12 w-52">
-        <div class="big-title my-4">Stay ahead of the curve with real-time dashboard</div>
-        <div class="text-item mb-3">Customize reports by dragging and dropping different data elements and
-          visualizations
-          with ease</div>
-        <div class="text-item mb-3">Allow users to easily create custom reports without the need for technical skills or
-          knowledge</div>
-        <div class="text-item mb-3">Uncover deeper insights to inform your decision-making process through interactive
-          and
-          drill-down-able data visualizations</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="Deployment_Pricing d-flex align-items-center justify-content-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-6 d-flex justify-content-start">
-        <div class="option-item text-center">
-          <div class="option-title">Deployment <br /> options</div>
-          <div class="overflow-hidden d-flex align-items-center justify-content-center w-440px">
-            <img src="../assets/Images/Mobile development-amico (2) 1.png" class="w-100" alt="">
+              </ng-template>
+              <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class=" mb-4">
+                  <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">In-app messaging
+                  </div>
+                </div>
+              </ng-template>
+              <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class=" mb-4">
+                  <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">Mobile push
+                  </div>
+                </div>
+              </ng-template>
+              <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class=" mb-4">
+                  <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">On-site
+                    messaging
+                  </div>
+                </div>
+              </ng-template>
+              <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class=" mb-4">
+                  <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">SMS</div>
+                </div>
+              </ng-template>
+              <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class=" mb-4">
+                  <div class="point-slider-item h-100 d-flex align-items-center justify-content-center">Web Push
+                    Notification
+                  </div>
+                </div>
+              </ng-template>
+            </swiper>
           </div>
-          <p class="text-center d-flex flex-column align-items-center">
-            <span class="mb-2 highlight">On premise</span>
-            <span class="mb-2 ">or</span>
-            <span class="mb-2 highlight">Cloud</span>
-          </p>
         </div>
-      </div>
-      <div class="col-6 d-flex justify-content-end">
-        <div class="option-item text-center">
-          <div class="option-title">Pricing <br /> options</div>
-          <div class="overflow-hidden d-flex align-items-center justify-content-center w-440px">
-            <img src="../assets/Images/Pricing plans-amico.png" class="w-100" alt="">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="h-100 d-flex align-items-center justify-content-center">
+            <swiper [loop]="true" [autoHeight]="true" [allowTouchMove]="false" [thumbs]="{ swiper: thumbsSwiper }"
+                    [autoplay]="{ delay: 100, disableOnInteraction: false }" [pagination]="{ clickable: true }"
+                    [navigation]="false" class="slide-right">
+              <ng-template data-swiper-autoplay="6000" swiperSlide>
+                <img src="../assets/Images/Provide_img_slide01.png" class="w-75" alt="">
+              </ng-template>
+              <ng-template data-swiper-autoplay="10000" class="swiper-slide" swiperSlide>
+                <img src="../assets/Images/Provide_img_slide02.png" class="w-75" alt="">
+              </ng-template>
+
+              <ng-template data-swiper-autoplay="60000" swiperSlide>
+                <img src="../assets/Images/Provide_img_slide03.png" class="w-75" alt="">
+              </ng-template>
+              <ng-template data-swiper-autoplay="6000" swiperSlide>
+                <img src="../assets/Images/Provide_img_slide04.png" class="w-75" alt="">
+              </ng-template>
+
+              <ng-template data-swiper-autoplay="10000" class="swiper-slide" swiperSlide>
+                <img src="../assets/Images/Provide_img_slide05.png" class="w-75" alt="">
+              </ng-template>
+
+              <ng-template data-swiper-autoplay="60000" swiperSlide>
+                <img src="../assets/Images/Provide_img_slide06.png" class="w-75" alt="">
+              </ng-template>
+            </swiper>
           </div>
-          <p class="text-center d-flex flex-column align-items-center">
-            <span class="mb-2 highlight">On premise</span>
-            <span class="mb-2 ">or</span>
-            <span class="mb-2 highlight">Cloud</span>
-          </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="CTA text-center">
-  <h2>Schedule your personalized demo today</h2>
-  <a href="" class="CTA_button">Get a Demo</a>
-</section>
+  <section class="stay-ahead">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-12 w-48">
+          <div class="h-100 d-flex align-items-center justify-content-center">
+            <img src="../assets/Images/Design stats-pana 1.png" class="w-100" alt="">
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-xs-12 w-52">
+          <div class="big-title my-4">Stay ahead of the curve with real-time dashboard</div>
+          <div class="text-item mb-3">Customize reports by dragging and dropping different data elements and
+            visualizations
+            with ease
+          </div>
+          <div class="text-item mb-3">Allow users to easily create custom reports without the need for technical skills
+            or
+            knowledge
+          </div>
+          <div class="text-item mb-3">Uncover deeper insights to inform your decision-making process through interactive
+            and
+            drill-down-able data visualizations
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="our-customer text-center">
-  <h2 class="mb-4">Our Distinguished Customers Come From A Variety of Industries</h2>
-  <div class="list-cus d-flex align-items-center justify-content-between">
-    <div class="img-item">
-      <img src="../assets/Images/01.png" class="w-100" alt="">
+  <section class="Deployment_Pricing d-flex align-items-center justify-content-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-start">
+          <div class="option-item text-center">
+            <div class="option-title">Deployment <br/> options</div>
+            <div class="overflow-hidden d-flex align-items-center justify-content-center box-img">
+              <img src="../assets/Images/Mobile development-amico (2) 1.png" class="w-100" alt="">
+            </div>
+            <p class="text-center d-flex flex-column align-items-center">
+              <span class="mb-2 highlight">On premise</span>
+              <span class="mb-2 ">or</span>
+              <span class="mb-2 highlight">Cloud</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+          <div class="option-item text-center">
+            <div class="option-title">Pricing <br/> options</div>
+            <div class="overflow-hidden d-flex align-items-center justify-content-center box-img">
+              <img src="../assets/Images/Pricing plans-amico.png" class="w-100" alt="">
+            </div>
+            <p class="text-center d-flex flex-column align-items-center">
+              <span class="mb-2 highlight">SaaS</span>
+              <span class="mb-2 ">or</span>
+              <span class="mb-2 highlight">One-time-payment</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="img-item">
-      <img src="../assets/Images/02.png" class="w-100" alt="">
-    </div>
-    <div class="img-item">
-      <img src="../assets/Images/03.png" class="w-100" alt="">
-    </div>
-    <div class="img-item">
-      <img src="../assets/Images/04.png" class="w-100" alt="">
-    </div>
-    <div class="img-item">
-      <img src="../assets/Images/05.png" class="w-100" alt="">
-    </div>
-    <div class="img-item">
-      <img src="../assets/Images/06.png" class="w-100" alt="">
-    </div>
-    <div class="img-item">
-      <img src="../assets/Images/07.png" class="w-100" alt="">
-    </div>
-  </div>
-</section>
+  </section>
 
-<footer id="footer" class="text-center">
-  <h1 class="logo-footer"><img src="../assets/Images/Logo_CELL_TECH.png" class="w-100" alt=""></h1>
-  <h2>CELLTECH CDP</h2>
-  <p>Address: 30 Phan Ke Binh Str., Dong Da Dist., Ha Noi<br>
-    Email: phuongvnn@celltech.vn<br>
-    Phone: 091.825.8699</p>
-</footer>
+  <section class="CTA text-center">
+    <h2>Schedule your personalized demo today</h2>
+    <a href="" class="CTA_button">Get a Demo</a>
+  </section>
+
+  <section class="our-customer text-center">
+    <h2 class="mb-4">Our Distinguished Customers Come From A Variety of Industries</h2>
+    <div class="list-cus d-flex align-items-center justify-content-between">
+      <div class="img-item">
+        <img src="../assets/Images/01.png" class="w-100" alt="">
+      </div>
+      <div class="img-item">
+        <img src="../assets/Images/02.png" class="w-100" alt="">
+      </div>
+      <div class="img-item">
+        <img src="../assets/Images/03.png" class="w-100" alt="">
+      </div>
+      <div class="img-item">
+        <img src="../assets/Images/04.png" class="w-100" alt="">
+      </div>
+      <div class="img-item">
+        <img src="../assets/Images/05.png" class="w-100" alt="">
+      </div>
+      <div class="img-item">
+        <img src="../assets/Images/06.png" class="w-100" alt="">
+      </div>
+      <div class="img-item">
+        <img src="../assets/Images/07.png" class="w-100" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="text-center">
+    <h1 class="logo-footer"><img src="../assets/Images/Logo_CELL_TECH.png" class="w-100" alt=""></h1>
+    <h2>CELLTECH CDP</h2>
+    <p>Address: 30 Phan Ke Binh Str., Dong Da Dist., Ha Noi<br>
+      Email: phuongvnn@celltech.vn<br>
+      Phone: 091.825.8699</p>
+  </footer>
+</div>
