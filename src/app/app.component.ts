@@ -14,6 +14,7 @@ import SwiperCore , {
 } from 'swiper';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {DynamicService} from "./dynamic.service";
+import { NzDropdownMenuComponent } from 'ng-zorro-antd/dropdown';
 
 // install Swiper components
 SwiperCore.use([
@@ -25,7 +26,7 @@ SwiperCore.use([
   Zoom,
   Autoplay,
   Thumbs,
-  Controller
+  Controller,
 ]);
 @Component({
   selector: 'app-root',

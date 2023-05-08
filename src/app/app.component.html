@@ -2,26 +2,46 @@
   <div class="header-content">
     <div class="container">
       <div class="row">
-        <div class="col-xl-2 col-lg-2 col-sm-3">
+        <div class="col-xl-2 col-lg-3 col-sm-4 col-4 order-lg-0 order-md-0 order-sm-1 order-1">
           <h1 class="logo_cell_tech d-flex">
             <a href="#" class="d-inline-flex align-items-center">
-              <img class="" style="width: 80%;" src="../assets/Images/Logo_CELL_TECH_en.png" alt="logo">
+              <img class="hidden-xs hidden-sm" style="width: 80%;" src="../assets/Images/Logo_CELL_TECH_en.png"
+                alt="logo">
+              <img class="hidden-md hidden-lg hidden-xl" style="width: 50px;" src="../assets/Images/logo-mobile.png"
+                alt="logo">
               <!-- <img class="" style="width: 80%;" src="../assets/Images/Logo_CELL_TECH.png" alt="logo"> -->
             </a>
           </h1>
         </div>
-        <div class="col-xl-7 col-lg-7 col-sm-6">
-          <div class="feature">
+        <div class="col-xl-7 col-lg-6 col-sm-4 col-4 order-lg-1 order-md-1 order-sm-0 order-0">
+          <div class="buttom-menu-mobile hidden-md hidden-lg hidden-xl d-flex align-items-center h-100">
+            <a class="btn " nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+              Menu <span nz-icon nzType="down"></span>
+            </a>
+
+            <nz-dropdown-menu #menu="nzDropdownMenu">
+              <ul nz-menu class="menu-mb">
+                <li nz-menu-item><a href="#Features">Features</a></li>
+                <li nz-menu-item><a href="#Deployment">Deployment</a></li>
+                <li nz-menu-item><a href="#Deployment">Pricing</a></li>
+                <li nz-menu-item><a href="#footer">Contact</a></li>
+
+              </ul>
+            </nz-dropdown-menu>
+          </div>
+
+
+          <div class="feature hidden-xs hidden-sm">
             <a href="#Features">Features</a>
             <a href="#Deployment">Deployment</a>
             <a href="#Deployment">Pricing</a>
             <a href="#footer">Contact</a>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-3 col-sm-3">
+        <div class="col-xl-3 col-lg-3 col-sm-4 col-4 order-2">
           <div class="login&getstart">
             <a class="login" (click)="showModal()">Login</a>
-            <a class="get_started" type="button" (click)="showModal()">Get started</a>
+            <a class="get_started hidden-xs hidden-sm" type="button" (click)="showModal()">Get started</a>
           </div>
         </div>
       </div>
@@ -31,8 +51,13 @@
 
 <section class="banner">
   <div class="container">
-    <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 col-xs-12 text_banner">
+    <div class="row flex-xl-row-reverse flex-lg-row-reverse flex-md-row-reverse">
+      <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 col-xs-12 d-flex">
+        <div class="img_banner d-flex align-item-center justify-content-end">
+          <img src="../assets/Images/​ HP_Elite_Dragonfly.png" class="w-100" alt="">
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12 text_banner">
         <p class="p_1">The all-in-one platform for</p>
         <h2>Individualized, Cross-Channel Customer Experiences and Insights</h2>
         <p class="p_2">Grow your business by establishing strong relationships with your customers</p>
@@ -41,11 +66,7 @@
           wholly in a 360-degree view.</p>
         <a class="button_get_demo" type="button" (click)="showModal()">Get a demo</a>
       </div>
-      <div class="col-xl-6 col-lg-6 col-md-5 col-sm-4 col-xs-12 d-flex">
-        <div class="img_banner d-flex align-item-center justify-content-end">
-          <img src="../assets/Images/​ HP_Elite_Dragonfly.png" class="w-100" alt="">
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
@@ -53,14 +74,14 @@
 <section id="Features" class="manage_with_dynamic d-flex align-items-center justify-content-center">
   <div class="container">
     <div class="title-section text-center">
-      <h3 class="">Manage With Dynamic Database and APIs</h3>
+      <h3 class="big-title">Manage With Dynamic Database and APIs</h3>
       <p>With the power of data unification, our CDP solution helps you increase engagement, boost customer loyalty, and
         drive growth.</p>
       <img class="star_1" src="../assets/Images/Star 1.png" alt="">
       <img class="star_2" src="../assets/Images/Star 2.png" alt="">
     </div>
     <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-3">
         <div class="box_item">
           <div class="image-box-item d-flex align-items-end justify-content-center">
             <img src="../assets/Images/img_box_1.png" alt="">
@@ -68,7 +89,7 @@
           <p>Streamline data management process</p>
         </div>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-3">
         <div class="box_item">
           <div class="image-box-item d-flex align-items-end justify-content-center">
             <img src="../assets/Images/img_box_2.png" alt="">
@@ -76,7 +97,7 @@
           <p>Reducing the risk of errors.</p>
         </div>
       </div>
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 mb-3">
         <div class="box_item">
           <div class="image-box-item d-flex align-items-end justify-content-center">
             <img src="../assets/Images/img_box_3.png" alt="">
@@ -94,7 +115,7 @@
 <section class="GetAComplete">
   <div class="container">
     <div class="row">
-      <div class="col-xl-7 col-lg-7 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center">
+      <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12 d-flex align-items-center">
         <div class="text-section">
           <h3 class="big-title">Get a complete view of each and every user</h3>
           <p class="mb-3">Collect all your data sources for a 360-degree view of your customers in terms of their
@@ -103,7 +124,7 @@
             interactions through real-time segmentation and customer interest scoring.</p>
         </div>
       </div>
-      <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-xs-12">
+      <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12">
         <div class="img section"><img src="../assets/Images/img_Get_A_Complete.png" class="w-100" alt=""></div>
       </div>
     </div>
@@ -149,8 +170,10 @@
           [navigation]="false">
           <ng-template data-swiper-autoplay="5000" swiperSlide>
             <div class="slider-content">
+              <h3 class="hidden-xl hidden-lg text-capitalize text-center mb-2">Customer journey builder</h3>
+
               <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12 d-flex align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-cs-12 d-flex align-items-center">
                   <div class="px-5 ">
                     <p>Create personalized and targeted customer experiences from the first interaction to the final
                       purchase.</p>
@@ -163,7 +186,7 @@
                   </div>
                 </div>
                 <div
-                  class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 d-flex align-items-center justify-content-center">
+                  class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
                   <img src="../assets/Images/img-slide.png" class="w-85" alt="">
 
                 </div>
@@ -173,12 +196,14 @@
 
           <ng-template data-swiper-autoplay="5000" class="swiper-slide" swiperSlide>
             <div class="slider-content">
+              <h3 class="hidden-xl hidden-lg text-capitalize text-center mb-2">Automation trigger</h3>
+
               <div class="row">
                 <div
-                  class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center justify-content-center">
+                  class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center">
                   <img src="../assets/Images/slide_per_img01.png" class="w-75" alt="">
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12 d-flex align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-cs-12 d-flex align-items-center">
                   <div class="px-5 ">
                     <p>Activate targeted campaigns, personalized messages, and exclusive discount offers based on
                       real-time customer data analyzed within our comprehensive CDP solutions. Deliver relevant, timely
@@ -194,8 +219,9 @@
 
           <ng-template data-swiper-autoplay="5000" swiperSlide>
             <div class="slider-content">
+              <h3 class="hidden-xl hidden-lg text-capitalize text-center mb-2">Customer interest scoring</h3>
               <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12 d-flex align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex align-items-center">
                   <div class="px-5 ">
                     <p>Assign a score to each customer based on their interests and behaviors over time. Combine this
                       with our cutting-edge journey builder and transform your approach to customers to resonate with
@@ -204,7 +230,7 @@
                   </div>
                 </div>
                 <div
-                  class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center justify-content-center">
+                  class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center">
                   <img src="../assets/Images/Customer Survey-cuate 1.png" class="w-75" alt="">
                 </div>
               </div>
@@ -213,12 +239,14 @@
 
           <ng-template data-swiper-autoplay="5000" swiperSlide>
             <div class="slider-content">
+              <h3 class="hidden-xl hidden-lg text-capitalize text-center mb-2">Predict customer trends and take action accordingly</h3>
+
               <div class="row">
                 <div
-                  class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center justify-content-center">
+                  class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center">
                   <img src="../assets/Images/Dark analytics-bro.png" class="w-75" alt="">
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12 d-flex align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-cs-12 d-flex align-items-center">
                   <div class="px-5 ">
                     <p>Create personalized and targeted customer experiences from the first interaction to the final
                       purchase.</p>
@@ -245,7 +273,7 @@
       <div class="big-title text-center">Provide Seamless Customer Experience</div>
 
       <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <p class="">Offering a ubiquitous brand experience, our innovative multi-touchpoint approach connects with
             your customers
             on their preferred platforms, engaging and captivating them with every interaction.</p>
@@ -281,7 +309,7 @@
             </swiper>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <div class="h-100 d-flex align-items-center justify-content-center">
             <swiper [loop]="true" [autoHeight]="false" [allowTouchMove]="false" [thumbs]="{ swiper: thumbsSwiper }"
               [slidesPerView]="1" [initialSlide]="0" [autoplay]="{ delay: 5000, disableOnInteraction: false }"
@@ -316,12 +344,12 @@
   <section class="stay-ahead">
     <div class="container">
       <div class="row">
-        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-12 w-48">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 w-48">
           <div class="h-100 d-flex align-items-center justify-content-center">
             <img src="../assets/Images/Design stats-pana 1.png" class="w-100" alt="">
           </div>
         </div>
-        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-xs-12 w-52">
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 w-52">
           <div class="big-title my-4">Stay ahead of the curve with real-time dashboard</div>
           <div class="text-item mb-3">Customize reports by dragging and dropping different data elements and
             visualizations
@@ -343,7 +371,7 @@
   <section id="Deployment" class="Deployment_Pricing d-flex align-items-center justify-content-center">
     <div class="container">
       <div class="row">
-        <div class="col-6 d-flex justify-content-start">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-start">
           <div class="option-item text-center">
             <div class="option-title">Deployment <br /> options</div>
             <div class="overflow-hidden d-flex align-items-center justify-content-center box-img">
@@ -356,7 +384,7 @@
             </p>
           </div>
         </div>
-        <div class="col-6 d-flex justify-content-end">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-end">
           <div class="option-item text-center">
             <div class="option-title">Pricing <br /> options</div>
             <div class="overflow-hidden d-flex align-items-center justify-content-center box-img">
@@ -418,42 +446,43 @@
 <!-- Anh lấy  toàn content dưới đây vào popup nhé -->
 <div class="modal-ng-getdemo">
   <nz-modal [(nzVisible)]="isVisible" [nzTitle]="template" [nzFooter]="template" nzWidth="60%"
-  (nzOnCancel)="handleCancel()" class="modal-ng-getdemo" (nzOnOk)="handleOk()" >
-  <ng-container *nzModalContent>
-    <div *ngIf="form" class="popup_get_demo">
-      <div class="popup-get-demo-content text-center">
-        <div class="logo-celltech"><img src="../assets/Images/Logo_CELL_TECH.png" alt=""></div>
-        <h2 class="mb-4">Schedule a Demo</h2>
-        <form class="form-submit" [formGroup]="form">
-          <div class="row">
-            <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-              <input formControlName="NAME" class="form-control" type="text" placeholder="Full Name">
+    (nzOnCancel)="handleCancel()" class="modal-ng-getdemo" (nzOnOk)="handleOk()">
+    <ng-container *nzModalContent>
+      <div *ngIf="form" class="popup_get_demo">
+        <div class="popup-get-demo-content text-center">
+          <div class="logo-celltech"><img src="../assets/Images/Logo_CELL_TECH_en.png" alt=""></div>
+          <h2 class="mb-4">Schedule a Demo</h2>
+          <form class="form-submit" [formGroup]="form">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
+                <input formControlName="NAME" class="form-control" type="text" placeholder="Full Name">
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
+                <input formControlName="LEAD_PHONE_NUMBER" class="form-control" type="number"
+                  placeholder="Phone Number">
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
+                <input formControlName="LEAD_EMAIL" class="form-control" type="text" placeholder="Business Email">
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
+                <input formControlName="LEAD_COMPANY" class="form-control" type="text" placeholder="Company Name">
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
+                <input formControlName="JOB_TITLE" class="form-control" type="text" placeholder="Job Title">
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
+                <input formControlName="INDUSTRY" class="form-control" type="text" placeholder="Industry ">
+              </div>
             </div>
-            <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-              <input formControlName="LEAD_PHONE_NUMBER" class="form-control" type="number" placeholder="Phone Number">
-            </div>
-            <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-              <input formControlName="LEAD_EMAIL" class="form-control" type="text" placeholder="Business Email">
-            </div>
-            <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-              <input formControlName="LEAD_COMPANY" class="form-control" type="text" placeholder="Company Name">
-            </div>
-            <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-              <input formControlName="JOB_TITLE" class="form-control" type="text" placeholder="Job Title">
-            </div>
-            <div class="col-lg-6 col-lg-6 col-md-6 col-12 form-item px-3 mb-4">
-              <input formControlName="INDUSTRY" class="form-control" type="text" placeholder="Industry ">
-            </div>
-          </div>
-          <p> Please note that we will treat your data with respect, for further details on this you can check our <a
+            <!-- <p> Please note that we will treat your data with respect, for further details on this you can check our <a
               href="#" title="" rel=""> Privacy
-              Policy</a>.</p>
-          <button [disabled]="form.invalid" type="button" class="btn button-submit" (click)="submit()">Submit</button>
-        </form>
+              Policy</a>.</p> -->
+            <button [disabled]="form.invalid" type="button" class="btn button-submit" (click)="submit()">Submit</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </ng-container>
-</nz-modal>
+    </ng-container>
+  </nz-modal>
 </div>
 
 <ng-template #template></ng-template>

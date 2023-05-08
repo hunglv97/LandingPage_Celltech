@@ -94,9 +94,10 @@ $text-color-sub: #545454;
 .communicate-personally {
     .slide-top {
         .swiper-slide {
-            &:hover{
+            &:hover {
                 cursor: pointer;
             }
+
             &::after {
                 content: '';
                 display: inline;
@@ -117,14 +118,32 @@ $text-color-sub: #545454;
     }
 }
 
-.modal-ng-getdemo{
-    .ant-modal-header{
+.modal-ng-getdemo {
+    .ant-modal-header {
         display: none !important;
     }
 }
-.ant-modal-header,.ant-modal-footer{
+
+.ant-modal-header,
+.ant-modal-footer {
     display: none !important;
 }
-.ant-modal-content{
+
+.ant-modal-content {
     border-radius: 24px;
+}
+
+ul.ant-dropdown-menu.menu-mb {
+    border-radius: 16px;
+overflow: hidden;
+    li {
+        padding: 8px 24px;
+
+        a {
+            font-family: "Montserrat-Medium";
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $color-main;
+        }
+    }
 }

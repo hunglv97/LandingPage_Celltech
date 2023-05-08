@@ -104,13 +104,6 @@ h6 {
     width: 25%;
 }
 
-.w-48 {
-    width: 48%;
-}
-
-.w-52 {
-    width: 52%;
-}
 
 .w-75 {
     width: 75%;
@@ -473,6 +466,7 @@ h6 {
             padding: 16px 48px;
             font-size: 20px;
             color: #2E60AC;
+            display: inline-block;
 
             &:hover {
                 background-color: #2e60ac2c;
@@ -652,7 +646,7 @@ section.stay-ahead {
 
 section.Deployment_Pricing {
     min-height: 100vh;
-    padding: 40px 0;
+    padding: 40px 16px;
     background-image: url('../assets/Images/Bg_2323.png');
     background-size: cover;
     position: relative;
@@ -766,18 +760,58 @@ section.our-customer {
     }
 }
 
-// ============ SETMEDIA =========================
-@media (max-width: 1320px)
-/* xl*/
+.buttom-menu-mobile {
+    a.btn {
+        padding: 8px 24px;
+        border-radius: 12px;
+        font-family: "Montserrat-Medium";
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $text-color-main;
+    }
 
-    {
+    .ant-dropdown {
+        ul.ant-dropdown-menu {
+            li {
+                padding: 8px 24px;
+
+                a {
+                    font-family: "Montserrat-Medium";
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}
+
+// ============ SETMEDIA =========================
+@media (min-width: 1321px) {
     .hidden-xl {
         display: none !important;
+    }
+
+    .w-48 {
+        width: 48%;
+    }
+
+    .w-52 {
+        width: 52%;
     }
 
     .container {
         padding: 0;
     }
+}
+
+@media (max-width: 1320px)
+/* xl*/
+
+    {
+
+
+
 
     #header {
         padding: 16px 16px 0 16px;
@@ -1090,11 +1124,378 @@ section.our-customer {
     .hidden-sm {
         display: none !important;
     }
+
+    #header {
+        padding: 0;
+        top: 0px;
+
+        .header-content {
+            border-radius: 0;
+            padding: 0 16px;
+        }
+    }
+
+    .banner {
+        min-height: auto;
+        padding: 120px 16px 40px 16px;
+
+        .p_1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin: 16px 0 40px 0;
+        }
+
+        .p_2 {
+            font-size: 18px;
+        }
+
+        .img_banner {
+            margin: 0 32px 32px 32px;
+        }
+    }
+
+    #Features {
+        padding: 40px 16px;
+        min-height: min-content;
+    }
+
+    .manage_with_dynamic {
+        .title-section {
+            h3 {
+                font-size: 26px;
+                padding: 0 32px;
+                line-height: 40px;
+            }
+
+            p {
+                font-size: 16px;
+                width: 90%;
+            }
+        }
+
+        .get_demo {
+            margin-top: 40px;
+
+            a {
+                padding: 12px 40px;
+                font-size: 16px;
+            }
+        }
+
+        .box_item {
+            padding: 16px;
+
+            .image-box-item {
+                height: 50px;
+
+                img {
+                    height: 100% !important;
+                }
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .GetAComplete {
+        padding: 60px 16px;
+
+        .big-title {
+            margin-bottom: 26px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    .big-title {
+        font-size: 26px;
+    }
+
+    .communicate-personally .slider .slider-content p,
+    section.provides-eamless p,
+    section.stay-ahead .text-item {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .communicate-personally .slider .slider-content {
+        h3 {
+            font-family: 'Montserrat-Bold';
+            font-size: 18px;
+            color: $color-main;
+            margin-bottom: 24px;
+            padding: 0 16px;
+        }
+    }
+
+    .communicate-personally .slider .slider-header .ponit-slider-item p {
+        display: none;
+    }
+
+    section.provides-eamless {
+        padding: 40px 16px;
+    }
+
+    section.provides-eamless .big-title {
+        margin-bottom: 40px;
+    }
+
+    section.provides-eamless .point-slider-item {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    section.stay-ahead {
+        padding: 40px 16px;
+
+        img {
+            margin: auto;
+            width: 80% !important;
+        }
+    }
+
+    .Deployment_Pricing {
+        &::before {
+            display: none !important;
+        }
+
+        .col-12 {
+            justify-content: center !important;
+        }
+
+        .option-title {
+            font-size: 22px;
+            line-height: 32px;
+        }
+
+        .option-item {
+            margin-bottom: 40px;
+
+            img {
+                margin: 10px 0 !important;
+            }
+
+            p {
+                flex-direction: row !important;
+                justify-content: center;
+
+                span {
+                    font-size: 20px !important;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    section.CTA {
+        h2 {
+            font-size: 26px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: 16px;
+        }
+    }
+
+    #footer {
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+    }
 }
 
 @media (max-width: 575px) {
     .hidden-xs {
         display: none !important;
+    }
+
+    #header {
+        padding: 0;
+        top: 0px;
+
+        .header-content {
+            border-radius: 0;
+            padding: 0 16px;
+        }
+    }
+
+    .banner {
+        min-height: auto;
+        padding: 120px 16px 40px 16px;
+
+        .p_1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin: 16px 0 40px 0;
+        }
+
+        .p_2 {
+            font-size: 18px;
+        }
+
+        .img_banner {
+            margin: 0 32px 32px 32px;
+        }
+    }
+
+    #Features {
+        padding: 40px 16px;
+        min-height: min-content;
+    }
+
+    .manage_with_dynamic {
+        .title-section {
+            h3 {
+                font-size: 26px;
+                padding: 0 32px;
+                line-height: 40px;
+            }
+
+            p {
+                font-size: 16px;
+                width: 90%;
+            }
+        }
+
+        .get_demo {
+            margin-top: 60px;
+        }
+    }
+
+    .GetAComplete {
+        padding: 60px 16px;
+
+        .big-title {
+            margin-bottom: 26px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    .big-title {
+        font-size: 26px;
+    }
+
+    .communicate-personally .slider .slider-content p,
+    section.provides-eamless p,
+    section.stay-ahead .text-item {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .communicate-personally .slider .slider-content {
+        h3 {
+            font-family: 'Montserrat-Bold';
+            font-size: 18px;
+            color: $color-main;
+            margin-bottom: 24px;
+            padding: 0 16px;
+        }
+    }
+
+    .communicate-personally .slider .slider-header .ponit-slider-item p {
+        display: none;
+    }
+
+    section.provides-eamless {
+        padding: 40px 16px;
+    }
+
+    section.provides-eamless .big-title {
+        margin-bottom: 40px;
+    }
+
+    section.provides-eamless .point-slider-item {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    section.stay-ahead {
+        padding: 40px 16px;
+
+        img {
+            margin: auto;
+            width: 80% !important;
+        }
+    }
+
+    .Deployment_Pricing {
+        &::before {
+            display: none !important;
+        }
+
+        .col-12 {
+            justify-content: center !important;
+        }
+
+        .option-title {
+            font-size: 22px;
+            line-height: 32px;
+        }
+
+        .option-item {
+            margin-bottom: 40px;
+
+            img {
+                margin: 10px 0 !important;
+            }
+
+            p {
+                flex-direction: row !important;
+                justify-content: center;
+
+                span {
+                    font-size: 20px !important;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    section.CTA {
+        h2 {
+            font-size: 26px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: 16px;
+        }
+    }
+
+    #footer {
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
     }
 }
 

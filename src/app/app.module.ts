@@ -7,6 +7,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientJsonpModule, HttpClientModule} from "@angular/common/http";
 import {SwiperModule} from "swiper/angular";
 import {AppRoutingModule} from "./app-routing.module";
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {AppRoutingModule} from "./app-routing.module";
     NgZorroAntdModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    SwiperModule
+    SwiperModule,
+    NzDropDownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
