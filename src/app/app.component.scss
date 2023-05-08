@@ -1097,3 +1097,169 @@ section.our-customer {
         display: none !important;
     }
 }
+
+// ====================POP UP GET A DEMO====================
+.popup_get_demo {
+    padding: 40px;
+    box-shadow: 0 0 2px 3px #74747433;
+    border-radius: 32px;
+    margin: 100px auto;
+    min-width: 50%;
+    width: min-content;
+
+    .logo-celltech {
+        img {
+            width: 25%;
+            margin: 0 auto 24px auto;
+        }
+    }
+
+    h2 {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 24px;
+        color: $text-color-main;
+        margin-bottom: 20px;
+    }
+
+    .form-submit {
+        .form-item {
+            input {
+                height: 42px;
+                background-color: #f4f5f7;
+                border: none;
+                border-radius: 8px;
+                font-family: 'Montserrat-Medium';
+                font-size: 16px;
+                color: $text-color-main;
+
+                &::placeholder {
+                    color: #c0c0c0;
+                }
+            }
+        }
+    }
+
+    p {
+        font-family: 'Montserrat-Regular';
+        font-size: 14px;
+    }
+
+    .button-submit {
+        font-family: 'Montserrat-Medium';
+        font-size: 18px;
+        color: #ffffff;
+        background: linear-gradient(275.65deg, #2E60AC 3.33%, #6994CD 94.05%);
+        border-radius: 80px;
+        padding: 8px 24px;
+        width: 100%;
+        margin-top: 20px;
+
+        &:hover {
+            box-shadow: 0 0 2px 4px #8686863d;
+        }
+    }
+
+}
+
+@media (max-width: 1320px) {}
+
+@media (max-width: 1200px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .popup_get_demo {
+        min-width: 60%;
+        padding: 20px;
+
+        .logo-celltech img {
+            width: 35%;
+            margin: 0 auto 18px auto;
+        }
+
+        .popup_get_demo h2 {
+            font-size: 22px;
+        }
+
+        .form-submit .form-item input {
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-md {
+        display: none !important;
+    }
+
+    .popup_get_demo {
+        min-width: 90%;
+        padding: 20px;
+
+        .logo-celltech img {
+            width: 35%;
+            margin: 0 auto 18px auto;
+        }
+
+        .popup_get_demo h2 {
+            font-size: 22px;
+        }
+
+        .form-submit .form-item input {
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .hidden-sm {
+        display: none !important;
+    }
+
+    .popup_get_demo {
+        min-width: 90%;
+        padding: 20px;
+
+        .logo-celltech img {
+            width: 35%;
+            margin: 0 auto 18px auto;
+        }
+
+        .popup_get_demo h2 {
+            font-size: 22px;
+        }
+
+        .form-submit .form-item input {
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media (max-width: 575px) {
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .popup_get_demo {
+        min-width: 90%;
+        padding: 20px;
+
+        .logo-celltech img {
+            width: 35%;
+            margin: 0 auto 18px auto;
+        }
+
+        .popup_get_demo h2 {
+            font-size: 22px;
+        }
+
+        .form-submit .form-item input {
+            font-size: 14px;
+        }
+
+    }
+
+}
+
+// ====================END POP UP GET A DEMO====================
