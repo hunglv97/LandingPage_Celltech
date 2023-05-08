@@ -116,34 +116,34 @@
             [watchSlidesProgress]="true" class="slide-top">
             <ng-template swiperSlide>
               <div class="ponit-slider-item text-center ">
-                <span class="point"></span>
+                <span class="point cursor-pointer"></span>
                 <p>Customer journey builder</p>
               </div>
             </ng-template>
             <ng-template swiperSlide>
               <div class="ponit-slider-item text-center">
-                <span class="point"></span>
+                <span class="point cursor-pointer"></span>
                 <p>Automation trigger</p>
               </div>
             </ng-template>
             <ng-template swiperSlide>
               <div class="ponit-slider-item text-center">
-                <span class="point"></span>
+                <span class="point cursor-pointer"></span>
                 <p>Customer interest scoring</p>
               </div>
             </ng-template>
             <ng-template swiperSlide>
               <div class="ponit-slider-item text-center">
-                <span class="point"></span>
+                <span class="point cursor-pointer"></span>
                 <p>Predict customer trends and take action accordingly</p>
               </div>
             </ng-template>
           </swiper>
         </div>
         <swiper [loop]="true" [autoHeight]="false" [allowTouchMove]="false" [thumbs]="{ swiper: thumbsUpSwiper }"
-          [autoplay]="{ delay: 1000, disableOnInteraction: false }" [pagination]="{ clickable: true }"
+          [autoplay]="{ delay: 5000, disableOnInteraction: false }" [pagination]="{ clickable: true }"
           [navigation]="false">
-          <ng-template data-swiper-autoplay="6000" swiperSlide>
+          <ng-template data-swiper-autoplay="5000" swiperSlide>
             <div class="slider-content">
               <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12 d-flex align-items-center">
@@ -167,7 +167,7 @@
             </div>
           </ng-template>
 
-          <ng-template data-swiper-autoplay="10000" class="swiper-slide" swiperSlide>
+          <ng-template data-swiper-autoplay="5000" class="swiper-slide" swiperSlide>
             <div class="slider-content">
               <div class="row">
                 <div
@@ -188,7 +188,7 @@
             </div>
           </ng-template>
 
-          <ng-template data-swiper-autoplay="60000" swiperSlide>
+          <ng-template data-swiper-autoplay="5000" swiperSlide>
             <div class="slider-content">
               <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-cs-12 d-flex align-items-center">
@@ -206,7 +206,7 @@
             </div>
           </ng-template>
 
-          <ng-template data-swiper-autoplay="60000" swiperSlide>
+          <ng-template data-swiper-autoplay="5000" swiperSlide>
             <div class="slider-content">
               <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center justify-content-center">
@@ -246,6 +246,7 @@
           <div class="row">
 
             <swiper (swiper)="thumbsSwiper = $event" [spaceBetween]="0" [slidesPerView]="6" [freeMode]="true"
+                    [autoplay]="{ delay: 5000, disableOnInteraction: false }"
                     [watchSlidesProgress]="true" class="slide-left">
               <ng-template swiperSlide class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                 <div class="point-slider-item active h-100 d-flex align-items-center justify-content-center">Email
