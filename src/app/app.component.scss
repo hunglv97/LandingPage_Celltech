@@ -497,9 +497,10 @@ h6 {
 }
 
 .communicate-personally {
-    height: 110vh;
+    min-height: 110vh;
     background: url('../assets/Images/Background-C.jpg');
     background-size: cover;
+    padding: 40px 16px;
 
     .communicate-personally-content {
         width: 80%;
@@ -584,7 +585,7 @@ h6 {
                 font-family: 'Montserrat-SemiBold';
                 font-size: 20px;
                 color: #204379;
-                text-align: justify;
+                // text-align: justify;
                 line-height: 32px;
             }
         }
@@ -602,7 +603,7 @@ section.provides-eamless {
         font-family: 'Montserrat-Medium';
         font-size: 20px;
         color: $text-color-sub;
-        text-align: justify;
+        // text-align: justify;
         margin-bottom: 32px;
 
     }
@@ -695,7 +696,7 @@ section.Deployment_Pricing {
 section.CTA {
     background: url('../assets/Images/BG_CTA.jpg');
     background-size: cover;
-    padding: 126px;
+    padding: 126px 24px;
 
     h2 {
         font-size: 42px;
@@ -720,7 +721,7 @@ section.CTA {
 
 section.our-customer {
     background: #2E60AC;
-    padding: 40px 0;
+    padding: 40px 16px;
 
     h2 {
         font-size: 24px;
@@ -788,9 +789,7 @@ section.our-customer {
 
 // ============ SETMEDIA =========================
 @media (min-width: 1321px) {
-    .hidden-xl {
-        display: none !important;
-    }
+
 
     .w-48 {
         width: 48%;
@@ -809,8 +808,6 @@ section.our-customer {
 /* xl*/
 
     {
-
-
 
 
     #header {
@@ -917,10 +914,10 @@ section.our-customer {
     }
 
     section.CTA {
-        padding: 56px;
+        padding: 56px 16px;
 
         h2 {
-            font-size: 32px;
+            font-size: 30px;
             width: 100%;
             margin-bottom: 50px;
         }
@@ -961,6 +958,12 @@ section.our-customer {
             font-size: 18px;
             line-height: 32px;
         }
+    }
+}
+
+@media (min-width:1200px) {
+    .hidden-xl {
+        display: none !important;
     }
 }
 
@@ -1131,7 +1134,12 @@ section.our-customer {
 
         .header-content {
             border-radius: 0;
-            padding: 0 16px;
+            padding: 0;
+
+            a {
+                font-size: 14px;
+                text-transform: uppercase;
+            }
         }
     }
 
@@ -1209,6 +1217,17 @@ section.our-customer {
             margin-bottom: 26px;
         }
 
+        .img_section {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 80% !important;
+                margin: auto;
+            }
+
+        }
+
         p {
             font-size: 16px;
             line-height: 26px;
@@ -1281,6 +1300,8 @@ section.our-customer {
 
             img {
                 margin: 10px 0 !important;
+                height: auto !important;
+                padding: 0 80px !important;
             }
 
             p {
@@ -1331,7 +1352,12 @@ section.our-customer {
 
         .header-content {
             border-radius: 0;
-            padding: 0 16px;
+            padding: 0;
+
+            a {
+                font-size: 14px;
+                text-transform: uppercase;
+            }
         }
     }
 
@@ -1349,7 +1375,8 @@ section.our-customer {
         }
 
         .p_2 {
-            font-size: 18px;
+            font-size: 18px !important;
+            text-align: inherit !important;
         }
 
         .img_banner {
@@ -1365,8 +1392,8 @@ section.our-customer {
     .manage_with_dynamic {
         .title-section {
             h3 {
-                font-size: 26px;
-                padding: 0 32px;
+                font-size: 24px;
+                padding: 0 8px;
                 line-height: 40px;
             }
 
@@ -1395,7 +1422,7 @@ section.our-customer {
     }
 
     .big-title {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .communicate-personally .slider .slider-content p,
@@ -1430,6 +1457,7 @@ section.our-customer {
     section.provides-eamless .point-slider-item {
         padding: 14px;
         font-size: 14px;
+        height: 70px !important;
     }
 
     section.stay-ahead {
@@ -1458,8 +1486,13 @@ section.our-customer {
         .option-item {
             margin-bottom: 40px;
 
+            .option-title {
+                font-size: 24px !important;
+            }
+
             img {
                 margin: 10px 0 !important;
+                height: auto !important;
             }
 
             p {
@@ -1467,7 +1500,7 @@ section.our-customer {
                 justify-content: center;
 
                 span {
-                    font-size: 20px !important;
+                    font-size: 16px !important;
                     padding: 0 10px;
                 }
             }
@@ -1487,12 +1520,14 @@ section.our-customer {
     }
 
     #footer {
+        padding: 25px 16px;
+
         h2 {
-            font-size: 28px;
+            font-size: 24px;
         }
 
         p {
-            font-size: 16px;
+            font-size: 14px;
             line-height: 28px;
         }
 
@@ -1608,7 +1643,16 @@ section.our-customer {
         .form-submit .form-item input {
             font-size: 14px;
         }
+    }
 
+    .communicate-personally {
+        .communicate-personally-content {
+            width: 100%;
+        }
+
+        .slider .slider-header {
+            padding: 0;
+        }
     }
 }
 
@@ -1635,6 +1679,12 @@ section.our-customer {
         }
 
     }
+
+    .communicate-personally {
+        .communicate-personally-content {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -1642,9 +1692,12 @@ section.our-customer {
         display: none !important;
     }
 
+    .ant-modal {
+        width: 90% !important;
+    }
+
     .popup_get_demo {
-        min-width: 90%;
-        padding: 20px;
+        padding: 0px;
 
         .logo-celltech img {
             width: 35%;
@@ -1659,6 +1712,12 @@ section.our-customer {
             font-size: 14px;
         }
 
+    }
+
+    .communicate-personally {
+        .communicate-personally-content {
+            width: 100%;
+        }
     }
 
 }

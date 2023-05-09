@@ -147,3 +147,24 @@ overflow: hidden;
         }
     }
 }
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .ant-modal{
+        width: 80% !important ;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .ant-modal{
+        width: 80% !important ;
+    }
+}
+
+@media (max-width: 575px) {
+    .ant-modal{
+        width: 90% !important ;
+    }
+}
+
