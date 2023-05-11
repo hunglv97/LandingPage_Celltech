@@ -432,7 +432,7 @@ h6 {
     }
 
     .box_item {
-        padding: 64px 40px;
+        padding: 32px 12px;
         background: #FCFCFC;
         border: 1px solid #E3E3E3;
         border-radius: 24px;
@@ -441,8 +441,13 @@ h6 {
         z-index: 30;
 
         .image-box-item {
-            height: 110px;
-            margin-bottom: 46px;
+            padding: 0 32px;
+            margin-bottom: 16px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
 
         p {
@@ -867,10 +872,6 @@ section.our-customer {
         width: 80%;
     }
 
-    .manage_with_dynamic .box_item {
-        padding: 30px;
-    }
-
     .manage_with_dynamic .box_item p {
         font-size: 20px;
     }
@@ -1013,27 +1014,33 @@ section.our-customer {
         font-size: 32px;
     }
 
-    .manage_with_dynamic .title-section {
-        margin-bottom: 42px;
-        position: relative;
-    }
+    .manage_with_dynamic {
+        .title-section {
+            margin-bottom: 42px;
+            position: relative;
 
-    .manage_with_dynamic .title-section h3 {
-        font-size: 32px;
-        margin-bottom: 20px;
-    }
+            h3 {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
 
-    .manage_with_dynamic .title-section p {
-        font-size: 18px;
-        width: 80%;
-    }
+            p {
+                font-size: 18px;
+                width: 80%;
+            }
+        }
 
-    .manage_with_dynamic .box_item {
-        padding: 30px;
-    }
+        .box_item {
+            padding: 24px 12px;
 
-    .manage_with_dynamic .box_item p {
-        font-size: 20px;
+            .image-box-item {
+                padding: 0;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
     }
 
     .GetAComplete p {
@@ -1121,6 +1128,18 @@ section.our-customer {
     .hidden-md {
         display: none !important;
     }
+
+    .manage_with_dynamic {
+        .box_item {
+            .image-box-item {
+                padding: 0;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1195,17 +1214,17 @@ section.our-customer {
 
         .box_item {
             padding: 16px;
+            width: 70%;
+            margin: auto;
 
             .image-box-item {
-                height: 50px;
-
                 img {
                     height: 100% !important;
                 }
             }
 
             p {
-                font-size: 14px;
+                font-size: 16px;
             }
         }
     }
